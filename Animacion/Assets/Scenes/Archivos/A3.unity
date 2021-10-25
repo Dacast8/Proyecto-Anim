@@ -167,7 +167,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1332882176}
+  controlcursor: {fileID: 334604750}
 --- !u!65 &308535289
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -181,6 +181,52 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 121.42104, y: 92.42056, z: 258.96103}
   m_Center: {x: -1.5776532, y: -143.27449, z: 45.645416}
+--- !u!1 &334604748
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 334604749}
+  - component: {fileID: 334604750}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &334604749
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334604748}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -179.63043, y: 194.03731, z: 146.04037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1589199060}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &334604750
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 334604748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4df0035f68d6446be10244c3246ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamanoCursor: 100
+  cursorMano: {fileID: 2800000, guid: d8c1a7b276e6e614fbe5f437b7ab9cc1, type: 3}
+  cursorNormal: {fileID: 2800000, guid: a50f0fb622f488745ab52a81974570d4, type: 3}
 --- !u!1 &422277828
 GameObject:
   m_ObjectHideFlags: 0
@@ -676,7 +722,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1332882176}
+  controlcursor: {fileID: 334604750}
 --- !u!65 &984700833
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -960,52 +1006,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1332882175
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1332882177}
-  - component: {fileID: 1332882176}
-  m_Layer: 0
-  m_Name: Cursor
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1332882176
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332882175}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e4df0035f68d6446be10244c3246ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tamanoCursor: 80
-  cursorMano: {fileID: 2800000, guid: 0cd978fc3ce550b4588a62d150dc29ad, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 7c7e9293bf503ac43b65f7c33004c0a2, type: 3}
---- !u!4 &1332882177
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1332882175}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -179.63043, y: 194.03731, z: 146.04037}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1589199060}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1337982370
 GameObject:
   m_ObjectHideFlags: 0
@@ -1176,7 +1176,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1332882176}
+  controlcursor: {fileID: 334604750}
 --- !u!65 &1566861656
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1217,7 +1217,7 @@ Transform:
   m_LocalPosition: {x: 437.98074, y: 251.52928, z: -112.45663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1332882177}
+  - {fileID: 334604749}
   - {fileID: 308535287}
   - {fileID: 1566861654}
   - {fileID: 984700831}

@@ -29,4 +29,16 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Archivos/A3.unity
     guid: 97c7f26200e02ab43abe28d67629aa12
+  - enabled: 1
+    path: Assets/Scenes/Archivos/Votacion.unity
+    guid: fa3b9211ca03b084fbc432ae63a7b347
+  - enabled: 1
+    path: Assets/Scenes/Archivos/Final Pierde.unity
+    guid: e016f75af322e5d4ca7bc32a015b6c1d
+  - enabled: 1
+    path: Assets/Scenes/Archivos/FinalPierde2.unity
+    guid: d1d0b0c8c94b0544b9193568a983d9b9
+  - enabled: 1
+    path: Assets/Scenes/Archivos/FinalGanador.unity
+    guid: d40e09f9f17b05047bd7c3972e3fc5ed
   m_configObjects: {}

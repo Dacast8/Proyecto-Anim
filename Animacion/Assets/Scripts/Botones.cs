@@ -7,6 +7,8 @@ using UnityEngine.SceneManagement;
 public class Botones : MonoBehaviour
 {
     private Button act;
+    private Canvas act2;
+    //private Image act2i;
     public int contador=0;
     
     private string Puntos = "puntos";
@@ -15,6 +17,8 @@ public class Botones : MonoBehaviour
     private void Awake()
     {
         act = GameObject.FindGameObjectWithTag("Archivos").GetComponent<Button>();
+        act2 = GameObject.FindGameObjectWithTag("Feedback").GetComponent<Canvas>();
+        //act2i = GameObject.FindGameObjectWithTag("Feedback").GetComponent<Image>();
         //act.enabled = false;
         LoadData();
         
@@ -23,7 +27,7 @@ public class Botones : MonoBehaviour
 
     void Start()
     {
-
+        act2.enabled = true;
         Verificar();
 
 
@@ -53,12 +57,16 @@ public class Botones : MonoBehaviour
         if (contador == 0)
         {
             act.enabled = false;
+            
+            //act2i.enabled = true;
 
         }
 
         else if (contador >= 1)
         {
             act.enabled = true;
+            act2.enabled = false;
+            //act2i.enabled = false;
 
        }
     }
@@ -85,6 +93,12 @@ public class Botones : MonoBehaviour
     {
         PlayerPrefs.DeleteKey("puntos");
         contador = 0;
+        
+
+    }
+
+    public void SalirApp()
+    {
         Application.Quit();
 
     }

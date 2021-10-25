@@ -9,6 +9,7 @@ public class prueba : MonoBehaviour
 {
     private Canvas activado;
     public int archivoscontador = 0;
+    private Collider zonaInter;
 
     private string Archivos = "archivos";
     // Start is called before the first frame update
@@ -16,6 +17,7 @@ public class prueba : MonoBehaviour
     private void Awake()
     {
         activado = GameObject.FindGameObjectWithTag("culpable").GetComponent<Canvas>();
+        zonaInter = GameObject.FindGameObjectWithTag("Zonainter").GetComponent<Collider>();
         //act.enabled = false;
         LoadData();
         
@@ -24,6 +26,7 @@ public class prueba : MonoBehaviour
 
     void Start()
     {
+        
 
         //Verificar();
 
@@ -54,12 +57,14 @@ public class prueba : MonoBehaviour
         if (archivoscontador < 3)
         {
             activado.enabled = false;
+            zonaInter.enabled = false;
 
         }
 
         else if (archivoscontador >= 3)
         {
             activado.enabled = true;
+            zonaInter.enabled = true;
 
         }
     }

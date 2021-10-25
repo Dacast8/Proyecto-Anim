@@ -347,7 +347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1858813336}
+  controlcursor: {fileID: 1408731363}
 --- !u!65 &314928153
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1858813336}
+  controlcursor: {fileID: 1408731363}
 --- !u!65 &1105120926
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -1228,7 +1228,19 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: A3
+          m_StringArgument: Votacion
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 902982429}
+        m_TargetAssemblyTypeName: prueba, Assembly-CSharp
+        m_MethodName: BorrarDatos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1143834184
@@ -1493,6 +1505,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1240303079}
   m_CullTransparentMesh: 1
+--- !u!1 &1408731361
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1408731362}
+  - component: {fileID: 1408731363}
+  m_Layer: 0
+  m_Name: Cursor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1408731362
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408731361}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -179.63043, y: 194.03731, z: 146.04037}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2111489438}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1408731363
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408731361}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3e4df0035f68d6446be10244c3246ca6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tamanoCursor: 100
+  cursorMano: {fileID: 2800000, guid: d8c1a7b276e6e614fbe5f437b7ab9cc1, type: 3}
+  cursorNormal: {fileID: 2800000, guid: a50f0fb622f488745ab52a81974570d4, type: 3}
 --- !u!1 &1555101563
 GameObject:
   m_ObjectHideFlags: 0
@@ -1742,7 +1800,7 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
---- !u!1 &1858813335
+--- !u!1 &1775584381
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1750,44 +1808,56 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1858813337}
-  - component: {fileID: 1858813336}
+  - component: {fileID: 1775584382}
+  - component: {fileID: 1775584384}
+  - component: {fileID: 1775584383}
   m_Layer: 0
-  m_Name: Cursor
-  m_TagString: Untagged
+  m_Name: ZonaInteraccion (5)
+  m_TagString: Zonainter
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1858813336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858813335}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3e4df0035f68d6446be10244c3246ca6, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  tamanoCursor: 80
-  cursorMano: {fileID: 2800000, guid: 0cd978fc3ce550b4588a62d150dc29ad, type: 3}
-  cursorNormal: {fileID: 2800000, guid: 7c7e9293bf503ac43b65f7c33004c0a2, type: 3}
---- !u!4 &1858813337
+--- !u!4 &1775584382
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1858813335}
+  m_GameObject: {fileID: 1775584381}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -179.63043, y: 194.03731, z: 146.04037}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 1024, y: 174.14, z: 36.595}
+  m_LocalScale: {x: 1.5182347, y: 0.9094613, z: 1.466271}
   m_Children: []
   m_Father: {fileID: 2111489438}
-  m_RootOrder: 0
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1775584383
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775584381}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controlcursor: {fileID: 1408731363}
+--- !u!65 &1775584384
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1775584381}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 94.53337, y: 153.55301, z: 258.96103}
+  m_Center: {x: 1, y: 1, z: 1}
 --- !u!1 &1942911523
 GameObject:
   m_ObjectHideFlags: 0
@@ -1832,7 +1902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1858813336}
+  controlcursor: {fileID: 1408731363}
 --- !u!65 &1942911526
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2180,7 +2250,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 75c92ed51b8fc1d44b029b0a8fce862e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  controlcursor: {fileID: 1858813336}
+  controlcursor: {fileID: 1408731363}
 --- !u!65 &2106281470
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2221,11 +2291,12 @@ Transform:
   m_LocalPosition: {x: 437.98074, y: 251.52928, z: -112.45663}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1858813337}
+  - {fileID: 1408731362}
   - {fileID: 1942911524}
   - {fileID: 1105120924}
   - {fileID: 2106281468}
   - {fileID: 314928151}
+  - {fileID: 1775584382}
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
