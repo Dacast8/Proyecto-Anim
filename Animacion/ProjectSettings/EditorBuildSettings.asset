@@ -15,12 +15,18 @@ EditorBuildSettings:
     path: Assets/Scenes/Archivos.unity
     guid: 42afc9a2e7aaecf478f9596633d67b6b
   - enabled: 1
-    path: Assets/Scenes/C1.unity
+    path: Assets/Scenes/Cuartos/C1.unity
     guid: 1748b3c4630bbc845b99b10f3cec9f2a
   - enabled: 1
-    path: Assets/Scenes/C2.unity
+    path: Assets/Scenes/Cuartos/C2.unity
     guid: b6e552bc6edae274ab873f4707f8ea14
   - enabled: 1
-    path: Assets/Scenes/A1.unity
+    path: Assets/Scenes/Archivos/A1.unity
     guid: 1aa43716ddb85dc428e7a386e039755b
+  - enabled: 1
+    path: Assets/Scenes/Archivos/A2.unity
+    guid: 68d05bbb813efe94e94f26f454265d24
+  - enabled: 1
+    path: Assets/Scenes/Archivos/A3.unity
+    guid: 97c7f26200e02ab43abe28d67629aa12
   m_configObjects: {}
